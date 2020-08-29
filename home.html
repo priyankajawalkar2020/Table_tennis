@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {
+  background-image: url("bg3.jpg");
+}
+.button1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #000066;;
+  color: white;
+  font-size: 22px;
+  font-style: bold;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  font: Arial;
+}
+.button2 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #000066;;
+  color: white;
+  font-size: 22px;
+  font-style: bold;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  font: Arial;
+}
+.button3 {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #000066;;
+  color: white;
+  font-size: 22px;
+  font-style: bold;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  font: Arial;
+}
+
+.button:hover {
+  background-color: #008CBA;  /*Blue*/
+  color: white;
+}
+h1 {
+    text-shadow: 3px 2px black;
+    color: white;
+}
+
+</style> 
+<body>
+<center><H1 style="font-size:4vw;"font color="white"> TABLE   TENNIS   GAME</h1></center>
+
+<br/><br/>
+<button class="button1 button" onclick="openWin('level1.html')">  Easy   </button><br/><br/>
+<button class="button2 button" onclick="openWin('level2.html')"> Medium</button><br/><br/>
+<button class="button3 button" onclick="openWin('level3.html')">  Hard   </button>
+
+<script>
+var myWindow;
+window.resizeTo(820,620)
+function openWin(a) {
+  myWindow = window.open(a, "", "width=820, height=620");
+  myWindow.focus();
+}
+
+</script>
+
+</body>
+</html>
